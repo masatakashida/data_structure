@@ -1,5 +1,6 @@
 #include <iostream>
 #include <list>
+#include <vector>
 
 int main()
 {
@@ -39,8 +40,24 @@ int main()
     }
 
     //// 配列 ////
-    //
-    int hairetu[2];
+    // データを一列に並べるもの。データへのアクセスは簡単。追加や削除に時間がかかる。
+    // 計算時間：O(1)
+    // データの追加：O(n)
+    // データの削除：O(n)
+
+    // 静的配列
+    int array[10];
+    for (int i = 0, n = sizeof(array)/sizeof(array[0]); i < n; ++i)
+    {
+        array[i] = i;
+    }
+
+    // 動的配列
+    std::vector<int> vector;
+    for (auto itr = vector.begin(); itr != vector.end(); ++itr)
+    {
+        
+    }
 
     //// スタック ////
     //
